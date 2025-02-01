@@ -133,6 +133,20 @@ print("hi all, \n\t welcome to python programming")
 # eg, value_1 = int(value)
 # print(value_1,type(value_1))
 
+# Input function in Python:
+# input() is used for taking input from user in string format and should be converted to int, float, etc using type casting and should be stored in a variable for further use in the program
+# Do's:
+# eg,
+Data_Value_2 = input("enter a value")
+Data_Value_2 = int(Data_Value_2)
+print(Data_Value_2)
+# don'ts:
+# eg,
+Data_Value_1 = input("enter a value")
+Data_Value_1 = int(input("enter a value"))
+print(Data_Value_1,type(Data_Value_1))
+# value error [ invalid literal for int() with base 10: '8.36' ]
+
 # Concatenation in Python
 # concatenation is used for joining two or more strings, lists, tuples, sets, etc
 # concatenation is represented by +,* operator
@@ -153,19 +167,7 @@ print(C)
 D = a + b
 print(D)
 
-# Input function in Python:
-# input() is used for taking input from user in string format and should be converted to int, float, etc using type casting and should be stored in a variable for further use in the program
-# Do's:
-# eg,
-Data_Value_2 = input("enter a value")
-Data_Value_2 = int(Data_Value_2)
-print(Data_Value_2)
-# don'ts:
-# eg,
-Data_Value_1 = input("enter a value")
-Data_Value_1 = int(input("enter a value"))
-print(Data_Value_1,type(Data_Value_1))
-# value error [ invalid literal for int() with base 10: '8.36' ]
+
 
 # Task: denomination of cash. [cash counter = 1000, 500, 100, 50, 20, 10, 5, 2, 1]
 withdrawal_amount = input ("Please enter the amount required by client")
