@@ -1,0 +1,281 @@
+# Python is case sensitive
+# Python is an interpreted language
+# Python is a high level language
+# Python is a general purpose language
+# Python is a dynamically typed language
+# Python is a strongly typed language
+# Python is a platform independent language
+# Python is an open source language
+# Python is a free language
+# Python is a community driven language
+# Python is a versatile language
+# Python is a beginner friendly language
+# Python is a powerful language
+# Python is a popular language
+# Python is a trending language
+# Python is a scalable language
+# Python is a secure language
+# Python is a fast language
+# Python is a reliable language
+# Python is a robust language
+# Python is a flexible language, etc
+
+
+# Python is used for web development    [ Django, Flask, Pyramid, Bottle, Tornado, etc ]
+# Python is used for software development    [ Pygame, Pyqt, Tkinter, Kivy, etc ]
+# Python is used for data analysis    [ Pandas, Numpy, Scipy, etc ]
+# Python is used for data visualization    [ Matplotlib, Seaborn, Plotly, etc ]
+# Python is used for machine learning    [ Scikit-learn, Tensorflow, Keras, Pytorch, etc ]
+# Python is used for artificial intelligence    [ OpenCV, Nltk, etc ]
+# Python is used for deep learning    [ Scikit-learn, Tensorflow, Keras, Pytorch, etc ]
+# Python is used for natural language processing    [ Nltk, Spacy, Textblob, etc ]
+# Python is used for robotics    [ Pyrobot, etc ]
+# Python is used for automation    [ Selenium, Pyautogui, etc ]
+# Python is used for web scraping    [ BeautifulSoup, Scrapy, etc ]
+
+# Input and Output in Python
+# input() is used for taking input from user
+
+# Comments in Python
+# single line comment [ ctrl + / ]
+# multi line comment [ ctrl + shift + / ]
+
+a= "Hello World"
+print(a)
+# print() is used for displaying output to user
+# print() is a built-in function in Python
+
+# to check the data type of the entry
+print(type(a))
+
+# escape sequence in Python
+# \n is used for new line
+# \t is used for tab space
+# \b is used for backspace
+# \r is used for carriage return
+# \a is used for alert
+# \f is used for form feed
+# \v is used for vertical tab
+# \\ is used for backslash
+# \' is used for single quote
+# \" is used for double quote
+# \? is used for question mark
+# \ooo is used for octal value
+# \xhh is used for hex value
+
+print("hi all, \n\t welcome to python programming")
+
+# variable declaration and assignment
+# variable name should start with a letter or an underscore
+# variable name should not start with a number eg: 1a
+# variable name should not have any special characters except underscore (_) eg: a@, a#
+# variable name should not have any spaces eg: a b
+# variable name should not be a keyword eg: if, else, for, while, def, class, etc
+# variable name should not be a built-in function eg: print, type, input, etc
+# variable name should be meaningful & in lowercase
+# variable name should not be too long,short
+# variable name should be separated by underscore if it has multiple words eg: first_name
+
+# Arithmethic Operators in Python
+# +, -, *, /, %, //, **
+# + is used for addition
+# - is used for subtraction
+# * is used for multiplication
+# / is used for division
+# % is used for modulo division
+# // is used for floor division
+# ** is used for power
+
+# Comparison Operators in Python
+# ==, !=, >, <, >=, <=
+# == is used for equality
+# != is used for inequality
+# > is used for greater than
+# < is used for less than
+# >= is used for greater than or equal to
+# <= is used for less than or equal to
+
+# Logical Operators in Python
+# and, or, not
+# and is used to check if both conditions are true
+# or is used to check if any one condition is true
+# not is used to check if the condition is false
+
+# Assignment Operators in Python
+# =, +=, -=, *=, /=, %=, //=, **=
+
+# Identity Operators in Python
+# is, is not
+
+# Membership Operators in Python
+# in, not in
+
+# Bitwise Operators in Python
+# &, |, ^, ~, <<, >>
+
+# Data Types in Python
+# int, float, str, bool, list, tuple, set, dict, None
+# int is whole number
+# float is decimal number
+# str is alphbets, numbers, special characters within single, double or triple quotes
+# bool is True or False
+
+# .dir() is used for displaying all built-in methods, functions, operations, etc of a data type
+
+# Type Conversion / type casting in Python
+# int(), float(), str(), bool(), list(), tuple(), set(), dict()
+# value_1 = 10
+# value_1 = str(value_1)
+# value_1 = int(value_1)
+# value_1 = float(value_1)
+# value_1 = bool(value_1)
+
+# eg, value_1 = int(value)
+# print(value_1,type(value_1))
+
+# Concatenation in Python
+# concatenation is used for joining two or more strings, lists, tuples, sets, etc
+# concatenation is represented by +,* operator
+# do's:
+# eg,
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+d = a * 3
+print(d)
+# don'ts:
+# eg,
+A = 4
+B = "bye"
+C = b * 4
+print(C)
+D = a + b
+print(D)
+
+# Input function in Python:
+# input() is used for taking input from user in string format and should be converted to int, float, etc using type casting and should be stored in a variable for further use in the program
+# Do's:
+# eg,
+Data_Value_2 = input("enter a value")
+Data_Value_2 = int(Data_Value_2)
+print(Data_Value_2)
+# don'ts:
+# eg,
+Data_Value_1 = input("enter a value")
+Data_Value_1 = int(input("enter a value"))
+print(Data_Value_1,type(Data_Value_1))
+# value error [ invalid literal for int() with base 10: '8.36' ]
+
+# Task: denomination of cash. [cash counter = 1000, 500, 100, 50, 20, 10, 5, 2, 1]
+withdrawal_amount = input ("Please enter the amount required by client")
+Number_of_500s = float(withdrawal_amount)//500
+print("You need to give","",Number_of_500s,"", "500s note(s)")
+Number_of_200s = float(withdrawal_amount)%500//200
+print("You need to give","",Number_of_200s,"", "200s note(s)")
+Number_of_100s = float(withdrawal_amount)%500%200//100
+print("You need to give","",Number_of_100s,"", "100s note(s)")
+Number_of_50s = float(withdrawal_amount)%500%200%100//50
+print("You need to give","",Number_of_50s,"", "50s note(s)")
+Number_of_20s = float(withdrawal_amount)%500%200%100%50//20
+print("You need to give","",Number_of_20s,"", "20s note(s) or coin(s)")
+Number_of_10s = float(withdrawal_amount)%500%200%100%50%20//10
+print("You need to give","",Number_of_10s,"", "10s note(s) or coin(s)")
+Number_of_5s = float(withdrawal_amount)%500%200%100%50%20%10//5
+print("You need to give","",Number_of_5s,"", "5s coin(s)")
+Number_of_2s = float(withdrawal_amount)%500%200%100%50%20%10%5//2
+print("You need to give","",Number_of_2s,"", "2s coin(s)")
+Number_of_1s = float(withdrawal_amount)%500%200%100%50%20%10%5%2//1
+print("You need to give","",Number_of_1s,"", "1s coin(s)")
+
+# Indexing in Python
+# Indexing is used for accessing an item from a collection of items, eg: list, tuple, set, dict, etc etc,
+# Indexing starts from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, etc, 
+# positive indexing, left to right, forward direction, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+# negative indexing, right to left, backward direction, -1, -2, -3, -4, -5, -6, -7, -8, -9, etc
+# eg:
+value_a = " Google 9a Pixel "
+value_a[7]
+value_a[-7]
+
+# Index_slicing in Python
+# Index_slicing is used for for capturing a part of str from actual data, accessing multiple items from a collection of items, eg: list, tuple, set, dict, etc etc,
+
+
+# Slicing in Python
+# Slicing is used for for capturing a part of str from actual data, accessing multiple items from a collection of items, eg: list, tuple, set, dict, etc etc,
+# Slicing is represented by [start:stop:step], 
+# eg:
+value_a = " Google 9a Pixel "
+value_a[0:6]
+value_a[0:6:8]
+
+# start is inclusive,
+# stop is exclusive, 
+# step is used for skipping items, 
+# default value of start is 0, 
+# default value of stop is end of the str, 
+# default value of step is 1
+# step can be positive or negative
+# positive step is used for forward direction, left to right
+# negative step is used for backward direction, right to left
+# step value should not be 0 or 1 or -1
+# step value should not be greater than the length of the str
+# step value should not be greater than the difference between start and stop
+
+# step reverse:
+# step reverse is used for reversing the str
+# step reverse is represented by [::-1]
+# eg:
+value_a = " Google 9a Pixel "
+value_a[::-1]
+print(value_a[::-1])
+
+
+
+
+
+
+# Data Structures in Python
+# list, tuple, set, dict
+# # List in Python
+# list is a collection of items
+# list is mutable, means it can be changed, modified, updated, deleted, etc
+# list is ordered, means list is indexed
+# list is indexed, means list supports indexing, slicing, etc, index starts from 0,
+# list is represented by []
+# list can have duplicate items, means same item can be repeated multiple,different data types, eg: int, float, str, bool, list, tuple, set, dict, etc
+# list supports slicing,step,reverse, stop, start, etc
+# list supports concatenation, means joining two or more lists
+# list supports repetition, means repeating a list multiple times
+# list supports nested list, means list within a list
+# list supports list comprehension, means creating a list using for loop
+# list supports list methods, means list has built-in methods for adding, removing, updating, deleting, etc
+# list supports list functions, means list has built-in functions for adding, removing, updating, deleting, etc
+# list supports list operations, means list has all built-in operations of a list, /.dir(list)
+
+# Tuple in Python
+# tuple is a collection of items, tuple is immutable, means it cannot be changed, modified, updated, deleted, etc,
+# tuple is ordered, means tuple is indexed, tuple is represented by (),
+# tuple
+
+# tuple is collection of items within () and is immutable
+# set is collection of items within {} and is unordered
+# dict is collection of items within {} and is unordered
+# None is used for null value
+
+
+# Conditional Statements in Python
+# if, elif, else
+# if is used for conditional statement
+# elif is used for else if
+# else is used for else
+
+# Looping Statements in Python
+# for, while
+# for is used for for loop
+# while is used for while loop
+
+# Functions in Python
+# def is used for defining a function
+# return is used for returning a value from a function
