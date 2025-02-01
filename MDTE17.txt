@@ -133,7 +133,7 @@ print("hi all, \n\t welcome to python programming")
 # eg, value_1 = int(value)
 # print(value_1,type(value_1))
 
-# Input function in Python:
+# Input function in Type casting or conversion:
 # input() is used for taking input from user in string format and should be converted to int, float, etc using type casting and should be stored in a variable for further use in the program
 # Do's:
 # eg,
